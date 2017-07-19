@@ -22,20 +22,37 @@
   </div>
 
 <script type="text/javascript">
+// scoreboard variables
 var letters = ["a", "e", "l", "p", "v", "x"];
+var score = 0
+var counter = 1
 
-var $wins = document.getElementById("wins");
-var $losses = document.getElementById("losses");
-var $guessesleft = document.getElementById("guessleft");
-var $sofar = document.getElementById("sofar");
+// Point system variables
+var wins = document.getElementById("wins");
+var losses = document.getElementById("losses");
+var guessesleft = document.getElementById("guessleft");
+var sofar = document.getElementById("sofar");
 
+// Pulling from list of chosen letters
 function getRandomLetter (){
 var letters = ["a", "e", "l", "p", "v", "x"];
 return letters [Math.floor (math.random()*letters.length)];
 }
 
-for (var i = 0; i <letters.length; i++) {
+document.onkeyup = function(event) {
+    var userguess = event.key
+    if (cpuguess == event.key)
+        score ++
+    var cpuguess = event.key
+    if (userguess !== event.key)
+        guessesleft --
+    var guessleft = 0
+        losses ++
 
+        function(event) {
+            location.reload();
+        }
+        // if i've won (or lost) start the restart function
 }
 
 </script>
