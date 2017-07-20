@@ -21,41 +21,10 @@
 	<br>
   </div>
 
-<script type="text/javascript">
-// scoreboard variables
-var letters = ["a", "e", "l", "p", "v", "x"];
-var score = 0
-var counter = 1
 
-// Point system variables
-var wins = document.getElementById("wins");
-var losses = document.getElementById("losses");
-var guessesleft = document.getElementById("guessleft");
-var sofar = document.getElementById("sofar");
+<!-- Link to javascript game.js -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
-// Pulling from list of chosen letters
-function getRandomLetter (){
-var letters = ["a", "e", "l", "p", "v", "x"];
-return letters [Math.floor (math.random()*letters.length)];
-}
-
-document.onkeyup = function(event) {
-    var userguess = event.key
-    if (cpuguess == event.key)
-        score ++
-    var cpuguess = event.key
-    if (userguess !== event.key)
-        guessesleft --
-    var guessleft = 0
-        losses ++
-
-        function(event) {
-            location.reload();
-        }
-        // if i've won (or lost) start the restart function
-}
-
-</script>
 
 </body>
 </html>
